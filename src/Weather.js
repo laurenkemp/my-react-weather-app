@@ -67,6 +67,8 @@ export default function Weather() {
         <a
           href="https://github.com/laurenkemp/my-react-weather-app.git"
           alt="github link"
+          target="_blank"
+          rel="noreferrer"
         >
           open-source code
         </a>{" "}
