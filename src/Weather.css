@@ -5,7 +5,6 @@ p {
 .description {
   text-transform: capitalize;
 }
-
 .farenheit {
   font-size: 18px;
   position: relative;
@@ -13,7 +12,7 @@ p {
 }
 
 .border {
-  max-width: 700px;
+  max-width: 605px !important;
 }
 
 .currentDate {
@@ -21,6 +20,7 @@ p {
   font-weight: bold;
   font-size: 16px;
   text-align: right;
+  margin-top: 34px;
 }
 
 .todayWeather {
@@ -95,7 +95,6 @@ p {
   position: relative;
   left: 50px;
 }
-
 .mainWeatherIcon {
   display: block;
   left: 0px;

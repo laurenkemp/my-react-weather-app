@@ -28,7 +28,7 @@ export default function Weather() {
           </div>
 
           <div className="col-5">
-            <div className="currentDate mt-4">{weatherData.date}</div>
+            <div className="currentDate">{weatherData.date}</div>
           </div>
         </div>
         <div className="row p-4">
