@@ -16,7 +16,7 @@ export default function Weather() {
 
   return (
     <div>
-      <div className="Weather border container m-5">
+      <div className="Weather border container ml-5 mt-5 mb-2">
         <div className="row p-4">
           <div className="col-6">
             <form action="submit" name="city">
@@ -63,7 +63,7 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      <div className="citySearch ml-5">
+      <div className="footnote">
         <a
           href="https://github.com/laurenkemp/my-react-weather-app.git"
           alt="github link"

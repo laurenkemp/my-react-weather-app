@@ -92,8 +92,7 @@ p {
 .footnote {
   color: grey;
   font-size: 10px;
-  position: relative;
-  left: 50px;
+  margin: 0px 50px;
 }
 .mainWeatherIcon {
   display: block;
