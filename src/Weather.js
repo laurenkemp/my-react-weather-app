@@ -3,6 +3,7 @@ import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [date, setDate] = useState("");
@@ -34,56 +35,9 @@ export default function Weather(props) {
                 <input type="search" placeholder="Search" autofocus="on" />
                 <input type="submit" value="Submit" className="button" />
               </form>
-            </div>
-
-            <div className="col-5">
-              <div className="currentDate">
-                <FormattedDate date={weatherData.date} />
-              </div>
+              <WeatherInfo data={weatherData} />
             </div>
           </div>
-          <div className="row p-4">
-            <div className="col-4 todayWeather">
-              <span className="currentWeatherText">Current weather in:</span>
-              <br />
-              <span className="currentCity">{weatherData.city}</span>
-              <br />
-              <span className="mainTempHigh">
-                {" "}
-                <span>{Math.round(weatherData.tempHigh)}</span>{" "}
-              </span>
-              <span className="mainTempLow">
-                <span> /{Math.round(weatherData.tempLow)}</span>
-                <span className="farenheit">°F</span>
-              </span>
-            </div>
-            <div className="col-4">
-              <img
-                alt="weather icon"
-                src={weatherData.iconUrl}
-                className={weatherData.description}
-              />
-            </div>
-
-            <div className="col-4 weatherDetails">
-              <span className="description">{weatherData.description}</span>
-              <br />
-              Humidity: <span>{weatherData.humidity}</span>%
-              <br />
-              Wind: <span>{weatherData.wind}</span>mph
-            </div>
-          </div>
-        </div>
-        <div className="footnote">
-          <a
-            href="https://github.com/laurenkemp/my-react-weather-app.git"
-            alt="github link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            open-source code
-          </a>{" "}
-          by Lauren Kemp
         </div>
       </div>
     );
