@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [date, setDate] = useState("");
@@ -17,7 +18,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       description: response.data.weather[0].description,
       city: response.data.name,
-      date: "Tuesday, November 8",
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -36,7 +37,9 @@ export default function Weather(props) {
             </div>
 
             <div className="col-5">
-              <div className="currentDate">{weatherData.date}</div>
+              <div className="currentDate">
+                <FormattedDate date={weatherData.date} />
+              </div>
             </div>
           </div>
           <div className="row p-4">
