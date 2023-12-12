@@ -27,5 +27,6 @@ export default function FormattedDate(props) {
   let day = days[props.date.getDay()];
   let month = months[props.date.getMonth()];
   let date = props.date.getDate();
+
   return `${day}, ${month} ${date}`;
 }
