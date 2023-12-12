@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
               <span className="farenheit">°F</span>
             </span>
           </div>
-          <div className="col-4">
+          <div className="col-4 mt-3">
             <WeatherIcon code={props.data.icon} />
           </div>
 
