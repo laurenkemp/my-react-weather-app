@@ -65,7 +65,7 @@ export default function Weather(props) {
             </div>
           </div>
           <WeatherInfo data={weatherData} />
-          <WeatherForecast ml-5 />
+          <WeatherForecast />
         </div>
         <div className="footnote">
           <a

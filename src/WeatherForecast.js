@@ -1,79 +1,62 @@
+import WeatherIcon from "./WeatherIcon";
+import "bootstrap/dist/css/bootstrap.css";
+
 export default function WeatherForecast() {
   return (
     <div className="WeatherForecast">
       <div class="row weather-forecast" id="forecast">
-        <div class="col-2 4 ml-4">
-          <div class="card text-center">
-            <div class="card-header">THURS</div>
-            <div class="card-body">
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                class="card-text weatherIconFuture"
-                alt="weather"
-              />
+        <div className="col-2 4 ml-4">
+          <div className="card text-center">
+            <div className="card-header">THURS</div>
+            <div className="card-body">
+              <WeatherIcon code="01d" size={30} />
             </div>
-            <div class="card-footer text-body-secondary currentTempHigh">
-              90° <span class="currentTempLow">78°</span>
+            <div className="card-footer text-body-secondary currentTempHigh">
+              90° <span className="currentTempLow">78°</span>
             </div>
           </div>
         </div>
-        <div class="col-2 4">
-          <div class="card text-center">
-            <div class="card-header">FRI</div>
-            <div class="card-body">
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                class="card-text weatherIconFuture"
-                alt="weather"
-              />
+        <div className="col-2 4">
+          <div className="card text-center">
+            <div className="card-header">FRI</div>
+            <div className="card-body">
+              <WeatherIcon code="01d" size={30} />
             </div>
-            <div class="card-footer text-body-secondary currentTempHigh">
-              90° <span class="currentTempLow">78°</span>
+            <div className="card-footer text-body-secondary currentTempHigh">
+              90° <span className="currentTempLow">78°</span>
             </div>
           </div>
         </div>
-        <div class="col-2 4">
-          <div class="card text-center">
-            <div class="card-header">SAT</div>
-            <div class="card-body">
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                class="card-text weatherIconFuture"
-                alt="weather"
-              />
+        <div className="col-2 4">
+          <div className="card text-center">
+            <div className="card-header">SAT</div>
+            <div className="card-body">
+              <WeatherIcon code="01d" size={30} />
             </div>
-            <div class="card-footer text-body-secondary currentTempHigh">
-              90° <span class="currentTempLow">78°</span>
+            <div className="card-footer text-body-secondary currentTempHigh">
+              90° <span className="currentTempLow">78°</span>
             </div>
           </div>
         </div>
-        <div class="col-2 4">
-          <div class="card text-center">
-            <div class="card-header">SUN</div>
-            <div class="card-body">
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                class="card-text weatherIconFuture"
-                alt="weather"
-              />
+        <div className="col-2 4">
+          <div className="card text-center">
+            <div className="card-header">SUN</div>
+            <div className="card-body">
+              <WeatherIcon code="01d" size={30} />
             </div>
-            <div class="card-footer text-body-secondary currentTempHigh">
-              90° <span class="currentTempLow">78°</span>
+            <div className="card-footer text-body-secondary currentTempHigh">
+              90° <span className="currentTempLow">78°</span>
             </div>
           </div>
         </div>
-        <div class="col-2 4">
-          <div class="card text-center">
-            <div class="card-header">MON</div>
-            <div class="card-body">
-              <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                class="card-text weatherIconFuture"
-                alt="weather"
-              />
+        <div className="col-2 4">
+          <div className="card text-center">
+            <div className="card-header">MON</div>
+            <div className="card-body">
+              <WeatherIcon code="01d" size={30} />
             </div>
-            <div class="card-footer text-body-secondary currentTempHigh">
-              90° <span class="currentTempLow">78°</span>
+            <div className="card-footer text-body-secondary currentTempHigh">
+              90° <span className="currentTempLow">78°</span>
             </div>
           </div>
         </div>
