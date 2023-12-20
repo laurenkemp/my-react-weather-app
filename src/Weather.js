@@ -58,14 +58,14 @@ export default function Weather(props) {
                 <input type="submit" value="Search" className="button" />
               </form>
             </div>
-            <div className="col-5">
+            <div className="col-6">
               <div className="currentDate">
                 <FormattedDate date={weatherData.date} />
               </div>
             </div>
           </div>
           <WeatherInfo data={weatherData} />
-          <WeatherForecast />
+          <WeatherForecast ml-5 />
         </div>
         <div className="footnote">
           <a

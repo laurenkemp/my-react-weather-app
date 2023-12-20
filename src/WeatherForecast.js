@@ -2,7 +2,7 @@ export default function WeatherForecast() {
   return (
     <div className="WeatherForecast">
       <div class="row weather-forecast" id="forecast">
-        <div class="col-2 4">
+        <div class="col-2 4 ml-4">
           <div class="card text-center">
             <div class="card-header">THURS</div>
             <div class="card-body">
