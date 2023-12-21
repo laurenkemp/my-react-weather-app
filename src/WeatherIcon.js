@@ -19,8 +19,8 @@ export default function WeatherIcon(props) {
     "11n": "RAIN",
     "13d": "SNOW",
     "13n": "SNOW",
-    "15d": "FOG",
-    "15n": "FOG",
+    "50d": "FOG",
+    "50n": "FOG",
   };
   return (
     <ReactAnimatedWeather
