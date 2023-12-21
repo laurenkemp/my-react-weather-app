@@ -1,3 +1,4 @@
+import React from "react";
 import "./Weather.css";
 import Weather from "./Weather";
 import "bootstrap/dist/css/bootstrap.css";
