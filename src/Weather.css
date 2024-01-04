@@ -22,7 +22,7 @@ p {
 .border {
   max-width: 605px !important;
   background-color: #bfe6ee;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .currentDate {
@@ -35,6 +35,7 @@ p {
   border-radius: 6px;
   padding: 3px;
   border: 2px solid lightgrey;
+  box-shadow: 5px 4px 0px black;
 }
 
 .currentWeatherText {
@@ -65,6 +66,7 @@ p {
   border: 2px solid lightgrey;
   padding-top: 24px;
   text-align: center;
+  box-shadow: 5px 4px 0px black;
 }
 
 .current-weather-info {
@@ -72,6 +74,7 @@ p {
   border-radius: 10px;
   border: 2px solid lightgrey;
   padding-top: 5px;
+  box-shadow: 5px 4px 0px black;
 }
 
 .main-icon {
@@ -82,6 +85,9 @@ p {
   margin-right: 5px;
   padding-top: 26px;
   text-align: center;
+  box-shadow: 5px 4px 0px black;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .weather-forecast {
@@ -118,6 +124,7 @@ p {
 
 .card {
   border: 2px solid lightgrey !important;
+  box-shadow: 5px 4px 0px black;
 }
 
 .footnote {
@@ -128,22 +135,41 @@ p {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 90%;
+    max-width: 100%;
     text-align: center;
   }
 
-  .Weather {
-    margin-left: 0px !important;
+  .form {
+    display: block !important;
+    margin: 0 auto;
   }
   .citySearch {
     display: none;
   }
+
   .currentDate {
-    max-width: 80%;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     margin-bottom: -20px;
     margin-top: 20px;
+    padding: 5px;
+  }
+
+  .mainTempHigh {
+    font-size: 36px;
+  }
+
+  .mainTempLow {
+    font-size: 36px;
+  }
+
+  .current-city-temp {
+    margin-top: -6px;
+  }
+
+  .farenheit {
+    font-size: 14px;
   }
 
   .WeatherInfo {
@@ -154,7 +180,7 @@ p {
   .weatherDetails {
     display: block !important;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 100%;
     padding: 4%;
     margin-bottom: -14px;
   }
@@ -162,7 +188,7 @@ p {
   .current-weather-info {
     display: block !important;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 100%;
     padding: 4%;
     margin-bottom: 5px;
   }
@@ -170,13 +196,13 @@ p {
   .main-icon {
     display: block !important;
     margin: 0 auto;
-    max-width: 80%;
+    padding-top: 10px;
+    max-width: 100%;
     margin-bottom: 5px;
-    padding-top: 20px;
   }
 
   .card {
-    max-width: 90%;
+    max-width: 100%;
     display: block !important;
     margin: 0 auto;
     margin-bottom: 10px;
