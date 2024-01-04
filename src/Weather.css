@@ -2,6 +2,14 @@ p {
   font-size: 25px;
 }
 
+.container {
+  font-family: "DM Sans", sans-serif;
+}
+
+.top-row {
+  margin-bottom: -14px;
+}
+
 .description {
   text-transform: capitalize;
 }
@@ -13,14 +21,20 @@ p {
 
 .border {
   max-width: 605px !important;
+  background-color: #bfe6ee;
+  border-radius: 12px;
 }
 
 .currentDate {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
-  text-align: right;
-  margin-top: 34px;
+  text-align: center;
+  margin-top: 28px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3px;
+  border: 2px solid lightgrey;
 }
 
 .currentWeatherText {
@@ -33,14 +47,41 @@ p {
   font-weight: bold;
 }
 
+.current-city-temp {
+  margin-top: -8px;
+}
+
 .citySearch {
   font-size: 10px;
-  color: grey;
+  color: black;
+  font-weight: bold;
 }
 
 .weatherDetails {
   color: grey;
   font-size: 14px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.current-weather-info {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  padding-top: 5px;
+}
+
+.main-icon {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 26px;
+  text-align: center;
 }
 
 .weather-forecast {
@@ -75,6 +116,10 @@ p {
   font-size: 9px;
 }
 
+.card {
+  border: 2px solid lightgrey !important;
+}
+
 .footnote {
   color: grey;
   font-size: 10px;
@@ -94,8 +139,11 @@ p {
     display: none;
   }
   .currentDate {
-    text-align: center;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
     margin-bottom: -20px;
+    margin-top: 20px;
   }
 
   .WeatherInfo {
@@ -104,13 +152,39 @@ p {
   }
 
   .weatherDetails {
-    display: block;
+    display: block !important;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 4%;
+    margin-bottom: -14px;
+  }
+
+  .current-weather-info {
+    display: block !important;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 4%;
+    margin-bottom: 5px;
+  }
+
+  .main-icon {
+    display: block !important;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 5px;
+    padding-top: 20px;
   }
 
   .card {
-    max-width: 70%;
+    max-width: 90%;
     display: block !important;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .footnote {
+    max-width: 60%;
+    display: block !important;
+    margin: 0 auto;
   }
 }

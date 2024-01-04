@@ -45,7 +45,7 @@ export default function Weather(props) {
     return (
       <div className="container">
         <div className="Weather border mt-5 mb-2">
-          <div className="row p-4 ml-1">
+          <div className="row p-4 ml-1 top-row">
             <div className="col-lg">
               <form onSubmit={handleSubmit}>
                 <label className="citySearch"> City </label>
