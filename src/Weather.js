@@ -43,10 +43,10 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div>
-        <div className="Weather border container ml-5 mt-5 mb-2">
-          <div className="row p-4">
-            <div className="col-6">
+      <div className="container">
+        <div className="Weather border mt-5 mb-2">
+          <div className="row p-4 ml-1">
+            <div className="col-lg">
               <form onSubmit={handleSubmit}>
                 <label className="citySearch"> City </label>
                 <br />
@@ -55,11 +55,12 @@ export default function Weather(props) {
                   placeholder="Search"
                   autoFocus="on"
                   onChange={handleCityChange}
+                  class="search-input"
                 />
                 <input type="submit" value="Search" className="button" />
               </form>
             </div>
-            <div className="col-6">
+            <div className="col-lg mr-1">
               <div className="currentDate">
                 <FormattedDate date={weatherData.date} />
               </div>
@@ -69,15 +70,33 @@ export default function Weather(props) {
           <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
         <div className="footnote">
+          This React.js project was coded by{" "}
+          <a
+            href="https://laurenkemp.dev"
+            target="_blank"
+            rel="noreferrer"
+            alt="lauren kemp website link"
+          >
+            Lauren Kemp
+          </a>
+          , open-sourced on{" "}
           <a
             href="https://github.com/laurenkemp/my-react-weather-app.git"
             alt="github link"
             target="_blank"
             rel="noreferrer"
           >
-            open-source code
+            GitHub
           </a>{" "}
-          by Lauren Kemp
+          , and hosted on{" "}
+          <a
+            href="https://www.netlify.com"
+            target="_blank"
+            rel="noreferrer"
+            alt="netlify link"
+          >
+            Netlify
+          </a>
         </div>
       </div>
     );

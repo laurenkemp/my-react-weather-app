@@ -3,10 +3,10 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
-    <div className="WeatherInfo">
-      <div className="WeatherInfo">
+    <div className="WeatherInfo container">
+      <div className="container">
         <div className="row p-4">
-          <div className="col-4 todayWeather">
+          <div className="col-lg">
             <span className="currentWeatherText">Current weather in:</span>
             <br />
             <span className="currentCity">{props.data.city}</span>
@@ -20,16 +20,17 @@ export default function WeatherInfo(props) {
               <span className="farenheit">°F</span>
             </span>
           </div>
-          <div className="col-4 mt-3">
+          <div className="col-lg">
             <WeatherIcon code={props.data.icon} size={65} />
           </div>
 
-          <div className="col-4 weatherDetails">
+          <div className="col-lg weatherDetails">
             <span className="description">{props.data.description}</span>
             <br />
-            Humidity: <span>{props.data.humidity}</span>%
+            Humidity: <span className="description">{props.data.humidity}</span>
+            %
             <br />
-            Wind: <span>{props.data.wind}</span>mph
+            Wind: <span className="description">{props.data.wind}</span>mph
           </div>
         </div>
       </div>

@@ -23,11 +23,6 @@ p {
   margin-top: 34px;
 }
 
-.todayWeather {
-  position: relative;
-  bottom: 12px;
-}
-
 .currentWeatherText {
   color: grey;
   font-size: 12px;
@@ -43,18 +38,9 @@ p {
   color: grey;
 }
 
-.mainWeatherIcon {
-  font-size: 70px;
-  position: relative;
-  left: 20px;
-}
-
 .weatherDetails {
   color: grey;
   font-size: 14px;
-  position: relative;
-  right: 50px;
-  top: 20px;
 }
 
 .weather-forecast {
@@ -92,9 +78,39 @@ p {
 .footnote {
   color: grey;
   font-size: 10px;
-  margin: 0px 50px;
+  margin-bottom: 30px;
 }
-.mainWeatherIcon {
-  display: block;
-  left: 0px;
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .Weather {
+    margin-left: 0px !important;
+  }
+  .citySearch {
+    display: none;
+  }
+  .currentDate {
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .WeatherInfo {
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .weatherDetails {
+    display: block;
+  }
+
+  .card {
+    max-width: 70%;
+    display: block !important;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }

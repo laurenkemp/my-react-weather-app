@@ -18,35 +18,37 @@ export default function WeatherForecast(props) {
 
   if (loaded) {
     return (
-      <div className="WeatherForecast">
-        <div className="row weather-forecast" id="forecast">
-          <div className="col-2 4 ml-4">
-            <div className="card text-center">
-              <WeatherForecastDay data={forecast[1]} />
+      <div className="container">
+        <div className="WeatherForecast">
+          <div className="row weather-forecast ml-1 mr-1" id="forecast">
+            <div className="col-lg 4">
+              <div className="card text-center">
+                <WeatherForecastDay data={forecast[1]} />
+              </div>
+            </div>
+            <div className="col-lg 4">
+              <div className="card text-center">
+                <WeatherForecastDay data={forecast[2]} />
+              </div>
+            </div>
+            <div className="col-lg 4">
+              <div className="card text-center">
+                <WeatherForecastDay data={forecast[3]} />
+              </div>
+            </div>
+            <div className="col-lg 4">
+              <div className="card text-center">
+                <WeatherForecastDay data={forecast[4]} />
+              </div>
+            </div>
+            <div className="col-lg 4">
+              <div className="card text-center">
+                <WeatherForecastDay data={forecast[5]} />
+              </div>
             </div>
           </div>
-          <div className="col-2 4">
-            <div className="card text-center">
-              <WeatherForecastDay data={forecast[2]} />
-            </div>
-          </div>
-          <div className="col-2 4">
-            <div className="card text-center">
-              <WeatherForecastDay data={forecast[3]} />
-            </div>
-          </div>
-          <div className="col-2 4">
-            <div className="card text-center">
-              <WeatherForecastDay data={forecast[4]} />
-            </div>
-          </div>
-          <div className="col-2 4">
-            <div className="card text-center">
-              <WeatherForecastDay data={forecast[5]} />
-            </div>
-          </div>
+          <br />
         </div>
-        <br />
       </div>
     );
   } else {
